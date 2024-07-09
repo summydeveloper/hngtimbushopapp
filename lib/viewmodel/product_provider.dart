@@ -1,6 +1,6 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:hngshopapp/apiservice.dart';
- import 'product.dart';
+import 'package:hngshopapp/viewmodel/apiservice.dart';
+ import '../model/product.dart';
 
 final apiServiceProvider = Provider<ApiService>((ref) => ApiService());
 
