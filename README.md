@@ -1,16 +1,30 @@
-# hngshopapp
+# HNG Timbu Shop App
 
-A new Flutter project.
+This is a Flutter-based mobile application that allows users to browse and view products fetched from the Timbu API. This README provides an overview of the app, instructions for setup, and guidelines for contributing.
 
 ## Getting Started
+Features
+Product List: Display a list of products fetched from the Timbu API.
+Product Details: View detailed information for each product.
+Responsive Design: Optimized for both Android and iOS platforms.
+State Management: Utilizes Riverpod for efficient state management.
 
-This project is a starting point for a Flutter application.
+# Installation
+ Prerequisites
+Flutter SDK: Install Flutter
+IDE (e.g., Android Studio, VS Code)
 
-A few resources to get you started if this is your first Flutter project:
+- Clone the repository
+  git clone https://github.com/yourusername/timbu_app.git
+  cd hngtimbushopapp
+- Install Depencies
+  flutter pub get
+- Run the app
+   flutter run
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+# API Usage
+The app uses the Timbu API to fetch product data. Make sure to replace apiKey in apiservice.dart with your API key.
+final String apiKey = 'your_api_key_here';
+final String baseUrl = 'https://api.timbu.cloud';
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
