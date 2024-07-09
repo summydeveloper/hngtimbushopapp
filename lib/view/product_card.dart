@@ -63,12 +63,18 @@ class ProductCard extends StatelessWidget {
               ],
             ),
           ),
-          TextButton(onPressed:(){
-           // Navigator.push();
-            Placeholder(
-              child: Text(product.description),
+          TextButton(onPressed:() {
+             showDialog(
+              context: context,
+              builder: (BuildContext context) {
+                return AlertDialog(
+            content: SingleChildScrollView(
+        child: Text(product.description),
+      ),
+          );
+              },
             );
-          }, child: const Text('Read More'), ),
+          }  , child: const Text('Read More'), ),
         ],
       ),
     );
